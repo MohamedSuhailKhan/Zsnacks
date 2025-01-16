@@ -1,12 +1,13 @@
-const productLinks = document.querySelectorAll('.product-list .product'); // Select product blocks
+const productLinks = document.querySelectorAll('.product-list .product');
 
 productLinks.forEach(product => {
   product.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent default link behavior
-    this.classList.add('fade-out'); // Add fade-out class to the product div
+    event.preventDefault();
 
-    const link = this.querySelector('a'); // Get the link inside the product
-    const href = link ? link.getAttribute('href') : null; // Get the href or null if no link
+    this.classList.add('swipe-left'); // Add swipe-left class
+
+    const link = this.querySelector('a');
+    const href = link ? link.getAttribute('href') : null;
 
     setTimeout(() => {
         if (href) {
@@ -14,6 +15,6 @@ productLinks.forEach(product => {
         } else {
             console.error("No link found in product block");
         }
-    }, 500); // 0.5 second delay (500 milliseconds)
+    }, 500); // Match transition duration
   });
 });
