@@ -78,9 +78,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                transition: filter 0.2s ease-in-out;
+                gap: 20px; 
             }
 
             .product {
@@ -91,12 +89,12 @@
             padding: 20px;
             width: 250px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: filter 0.2s ease-in-out;       
+            transition: filter 0.3s ease-in-out;       
         }
             
          .product.blur-on-click {
             filter: blur(3px);
-            opacity: 0.8; 
+            opacity: 0.7; 
         }
 
         .product:hover {
@@ -160,6 +158,26 @@
                 -2px 0px 0 black, 
                 0px -2px 0 black;
         }
+
+            #myBtn {
+              display: none; /* Hidden by default */
+              position: fixed; /* Fixed position relative to the viewport */
+              bottom: 20px; /* Distance from the bottom */
+              left: 20px; /* Distance from the left */
+              z-index: 99; /* Ensure it's on top of other content */
+              border: none; /* Remove default button border */
+              outline: none; /* Remove outline on focus */
+              background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+              color: white; /* Text color */
+              cursor: pointer; /* Change cursor on hover */
+              padding: 15px; /* Padding around the text */
+              border-radius: 10px; /* Rounded corners */
+              font-size: 18px; /* Font size */
+        }
+
+            #myBtn:hover {
+              background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+            }
         </style>
     </head>
     <body>
@@ -274,6 +292,35 @@
         <footer>
             <p>&copy;2025 Z Snacks. All rights reserved.</p>
         </footer>
+
+                         <p>Scroll down to see the button.</p>
+<p>Lots of content here so you can scroll...</p>
+<p>...</p>
+<div style="height:2000px;"></div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
     </body>
 </html>
 
