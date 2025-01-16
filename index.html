@@ -311,8 +311,30 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  const scrollDuration = 500; // Adjust duration in milliseconds (0.5 seconds)
+  const easing = 'easeInOut'; // Optional: Customize easing function
+
+  const startLocation = document.documentElement.scrollTop || document.body.scrollTop;
+  const targetPosition = 0;
+  let startTime = null;
+
+  const animate = (currentTime) => {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const progress = timeElapsed / scrollDuration;
+    const easedProgress = progress; // Use `easeInOut` if desired
+    const scroll = targetPosition + (startLocation - targetPosition) * easedProgress;
+    document.documentElement.scrollTop = scroll;
+    document.body.scrollTop = scroll; // For compatibility
+
+    if (Math.abs(scroll - targetPosition) > 1) {
+      window.requestAnimationFrame(animate);
+    } else {
+      window.cancelAnimationFrame(window.requestAnimationFrame(animate));
+    }
+  };
+
+  window.requestAnimationFrame(animate);
 }
 </script>
                           <footer>
