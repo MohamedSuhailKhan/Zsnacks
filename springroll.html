@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Rolls - Z Snacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffe4b5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e06158;
+            color: #000000;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo img {
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+            border: 2px solid transparent;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+            text-shadow: 0 0 8px #ffcc00, 0 0 15px #ffcc00, 0 0 20px #ffcc00;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffcc00;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Permanent Marker', cursive;
+            text-shadow:
+                -2px -2px 0 black,
+                2px -2px 0 black,
+                -2px 2px 0 black,
+                2px 2px 0 black,
+                0px 2px 0 black,
+                2px 0px 0 black,
+                -2px 0px 0 black,
+                0px -2px 0 black;
+        }
+
+        table {
+            width: 90%;
+            max-width: 90%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #ffd700;
+            color: #000;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        #flavors img {
+          display: block; 
+          margin: auto; 
+          max-width:50%; 
+          height:auto; 
+          border-radius :10px; 
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Z Snacks Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flavors">
+            <h2>Spring Roll Flavors</h2>
+            <img src="https://jackiem.com.au/wpinstall/wp-content/uploads/2022/01/mini-spring-rolls-minced-meat.jpg" alt="Spring Rolls">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Flavor</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spicy Chicken</td>
+                        <td>Delicious spicy chicken filling with a kick.</td>
+                        <td>R45.00 a dozen</td>
+                    </tr>
+                    <tr>
+                        <td>Steak</td>
+                        <td>Tender steak filling with savory spices.</td>
+                        <td>R45.00 a dozen</td>
+                    </tr>
+                    <tr>
+                        <td>Sweetcorn & Cheese</td>
+                        <td>Creamy cheese and sweetcorn blend for a delightful taste.</td>
+                        <td>R45.00 a dozen</td>
+                    </tr>
+                    <tr>
+                        <td>Mixed Veg</td>
+                        <td>A colorful mix of fresh vegetables wrapped in crispy pastry.</td>
+                        <td>R45.00 a dozen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; January,2025 Z Snacks. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
