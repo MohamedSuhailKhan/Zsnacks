@@ -4,7 +4,7 @@ productLinks.forEach(product => {
     product.addEventListener('click', function (event) {
         event.preventDefault();
 
-        this.classList.add('swipe-left');
+        this.classList.add('blur-on-click'); // Add blur class
 
         const link = this.querySelector('a');
         const href = link ? link.getAttribute('href') : null;
@@ -15,6 +15,6 @@ productLinks.forEach(product => {
             } else {
                 console.error("No link found in product block");
             }
-        }, 1000);
+        }, 200); // Match transition duration
     });
 });
