@@ -90,6 +90,23 @@
             width: 250px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+            .product::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #fff; /* Or any background color you prefer */
+                transform: translateX(0); /* Start position */
+                transition: transform 0.5s ease-in-out; /* Smooth transition */
+                z-index: 1; /* Ensure it's on top of the product content */
+        }
+            .product.swipe-left::before {
+                transform: translateX(-100%); /* Swipe to the left */
         }
 
         .product:hover {
@@ -153,14 +170,6 @@
                 -2px 0px 0 black, 
                 0px -2px 0 black;
         }
-            .fade-out {
-  animation: fadeOut 0.5s ease-in-out;
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 1; }
-}
         </style>
     </head>
     <body>
