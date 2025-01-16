@@ -52,6 +52,26 @@
             text-shadow: 0 0 8px #ffcc00, 0 0 15px #ffcc00, 0 0 20px #ffcc00;
         }
 
+         .nav-button {
+            color: red; 
+            text-decoration: none;
+            font-size: 20px; 
+            padding: 10px 20px; 
+            font-family: 'Permanent Marker', cursive;
+            transition: background-color 0.3s, color 0.3s; 
+            border-radius: 5px; 
+            background-color: transparent; 
+            text-shadow:
+                -2px -2px 0 black,
+                2px -2px 0 black,
+                -2px 2px 0 black,
+                2px 2px 0 black,
+                0px 2px 0 black,
+                2px 0px 0 black,
+                -2px 0px 0 black,
+                0px -2px 0 black;
+        }
+
         main {
             padding: 20px;
             max-width: 1200px;
@@ -78,8 +98,15 @@
                 0px -2px 0 black;
         }
 
+        .header-container {
+              display: flex; 
+              justify-content: space-between; 
+              align-items: center; 
+              margin-bottom:20px;
+        }
+
         table {
-            width: 90%;
+            width: calc(90% - 40px);
             max-width:90%;
             border-collapse: collapse; 
             margin:auto; 
@@ -131,8 +158,13 @@
     </header>
 
     <main>
-        <section id="flavors">
-            <h2>Delicious Pie Flavors</h2>
+          <section id="flavors">
+           <div class="header-container">
+               <a class="nav-button" href="springroll.html">&lt; Prev</a>
+               <h2>Delicious Pie Flavors</h2>
+               <a class="nav-button" href="minisub.html">Next &gt;</a>
+           </div>
+              
             <img src="https://i0.wp.com/themissinglokness.com/wp-content/uploads/2015/03/666B8604.jpg?fit=3000%2C2000&ssl=1" alt="Delicious Pies">
             <table>
                 <thead>
