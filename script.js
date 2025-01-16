@@ -15,6 +15,6 @@ productLinks.forEach(product => {
             } else {
                 console.error("No link found in product block");
             }
-        }, 200); // Match transition duration
+        }, 500); // Match transition duration
     });
 });
