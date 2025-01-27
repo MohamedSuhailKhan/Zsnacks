@@ -52,6 +52,26 @@
             text-shadow: 0 0 8px #ffcc00, 0 0 15px #ffcc00, 0 0 20px #ffcc00;
         }
 
+        .nav-button {
+            color: red; 
+            text-decoration: none;
+            font-size: 20px; 
+            padding: 10px 20px; 
+            font-family: 'Permanent Marker', cursive;
+            transition: background-color 0.3s, color 0.3s; 
+            border-radius: 5px; 
+            background-color: transparent; 
+            text-shadow:
+                -2px -2px 0 black,
+                2px -2px 0 black,
+                -2px 2px 0 black,
+                2px 2px 0 black,
+                0px 2px 0 black,
+                2px 0px 0 black,
+                -2px 0px 0 black,
+                0px -2px 0 black;
+        }
+
         main {
             padding: 20px;
             max-width: 1200px;
@@ -84,6 +104,13 @@
             border-collapse: collapse;
             margin: 20px auto;
         }
+
+        .header-container {
+              display: flex; 
+              justify-content: space-between; 
+              align-items: center; 
+              margin-bottom:20px;
+        }      
 
         th, td {
             border: 1px solid #ddd;
@@ -132,7 +159,12 @@
 
     <main>
         <section id="flavors">
-            <h2>Spring Roll Flavors</h2>
+            <div class="header-container">
+                <a class="nav-button" href="samoosas.html">&lt; Prev</a>
+                <h2>Delicious Springroll Flavors</h2>
+                <a class="nav-button" href="pies.html">Next &gt;</a>
+            </div>
+
             <img src="https://jackiem.com.au/wpinstall/wp-content/uploads/2022/01/mini-spring-rolls-minced-meat.jpg" alt="Spring Rolls">
             <table>
                 <thead>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samoosas - Z Snacks</title>
+    <title>Delicious Pies - Z Snacks</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -50,8 +50,26 @@
         nav ul li a:hover {
             color: #ffcc00;
             text-shadow: 0 0 8px #ffcc00, 0 0 15px #ffcc00, 0 0 20px #ffcc00;
-}
+        }
 
+         .nav-button {
+            color: red; 
+            text-decoration: none;
+            font-size: 20px; 
+            padding: 10px 20px; 
+            font-family: 'Permanent Marker', cursive;
+            transition: background-color 0.3s, color 0.3s; 
+            border-radius: 5px; 
+            background-color: transparent; 
+            text-shadow:
+                -2px -2px 0 black,
+                2px -2px 0 black,
+                -2px 2px 0 black,
+                2px 2px 0 black,
+                0px 2px 0 black,
+                2px 0px 0 black,
+                -2px 0px 0 black,
+                0px -2px 0 black;
         }
 
         main {
@@ -69,72 +87,66 @@
             text-align: center;
             margin-bottom: 20px;
             font-family: 'Permanent Marker', cursive;
-            text-shadow: 
-                -2px -2px 0 black, 
-                2px -2px 0 black, 
-                -2px 2px 0 black, 
-                2px 2px 0 black, 
-                0px 2px 0 black, 
-                2px 0px 0 black, 
-                -2px 0px 0 black, 
+            text-shadow:
+                -2px -2px 0 black,
+                2px -2px 0 black,
+                -2px 2px 0 black,
+                2px 2px 0 black,
+                0px 2px 0 black,
+                2px 0px 0 black,
+                -2px 0px 0 black,
                 0px -2px 0 black;
+        }
+
+        .header-container {
+              display: flex; 
+              justify-content: space-between; 
+              align-items: center; 
+              margin-bottom:20px;
         }
 
         table {
-            width: 90%;
-            max-with: 90%;
-            border-collapse: collapse;
-            margin: 20px auto;
+            width: calc(90% - 40px);
+            max-width:90%;
+            border-collapse: collapse; 
+            margin:auto; 
         }
 
         th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
+            border:1px solid #ddd; 
+            padding:8px; 
         }
 
         th {
-            background-color: #ffd700;
-            color: #000;
-        }
+          background-color:#ffd700; 
+          color:#000; 
+      }
 
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 0;
-            font-size: 14px;
-        }
+      footer {
+          background-color:#000000; 
+          color:#ffffff; 
+          text-align:center; 
+          padding:10px 0; 
+          font-size:14px; 
+      }
 
-        footer p {
-            margin: 0;
-        }
+      footer p {
+          margin:0; 
+      }
 
-        .yellow-border {
-            color: yellow;
-            text-shadow: 
-                -2px -2px 0 black, 
-                2px -2px 0 black, 
-                -2px 2px 0 black, 
-                2px 2px 0 black, 
-                0px 2px 0 black, 
-                2px 0px 0 black, 
-                -2px 0px 0 black, 
-                0px -2px 0 black;
-        }
-
-        #flavors img {
-            display: block; 
-            margin: 0 auto; 
-            max-width: 50%; 
-            height: auto;
-            border-redius: 10px;
-        }
+      #flavors img {
+          display:block; 
+          margin:20px auto; 
+          max-width:50%; 
+          height:auto; 
+          border-radius :10px; 
+      }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="Logo.png" alt="Z Snacks Logo">
+            <img src="images/Logo.png" alt="Z Snacks Logo">
         </div>
         <nav>
             <ul>
@@ -146,8 +158,13 @@
     </header>
 
     <main>
-        <section id="flavors">
-            <h2>Samoosa Flavors</h2>
+          <section id="flavors">
+           <div class="header-container">
+            <a class="nav-button" ></a>
+               <h2> Delicious Samoosa Flavors</h2>
+               <a class="nav-button" href="springroll.html">Next &gt;</a>
+           </div>
+              
             <img src="https://millingcoconuts.co.za/wp-content/uploads/2023/05/Cheese-and-Corn-Samoosas_1.jpg" alt="Samoosas">
             <table>
                 <thead>
@@ -160,41 +177,41 @@
                 <tbody>
                     <tr>
                         <td>Mince</td>
-                        <td>Classic minced meat filling, perfectly spiced.</td>
-                        <td>R40,00 a dozen</td>
-                    </tr>
-                    <tr>
-                        <td>Chicken</td>
-                        <td>Succulent chicken filling with a hint of masala.</td>
-                        <td>R40,00 a dozen</td>
-                    </tr>
-                    <tr>
-                        <td>Sweetcorn & Cheese</td>
-                        <td>Rich and creamy filling with sweetcorn and melted cheese.</td>
-                        <td>R40,00 a dozen</td>
-                    </tr>
-                    <tr>
-                        <td>Tinfish</td>
-                        <td>Flavored tinfish filling for seafood lovers.</td>
-                        <td>R40,00 a dozen</td>
-                    </tr>
-                    <tr>
-                        <td>Soya</td>
-                        <td>Delicious vegetarian option with spiced soya filling.</td>
-                        <td>R40,00 a dozen</td>
-                    </tr>
-                    <tr>
-                        <td>Steak Mince</td>
-                        <td>Premium steak mince filling with robust flavors.</td>
-                        <td>R40,00 a dozen</td>
-                    </tr>
+            <td>Classic minced meat filling, perfectly spiced.</td>
+            <td>R40,00 a dozen</td>
+        </tr>
+        <tr>
+            <td>Chicken</td>
+            <td>Succulent chicken filling with a hint of masala.</td>
+            <td>R40,00 a dozen</td>
+        </tr>
+        <tr>
+            <td>Sweetcorn & Cheese</td>
+            <td>Rich and creamy filling with sweetcorn and melted cheese.</td>
+            <td>R40,00 a dozen</td>
+        </tr>
+        <tr>
+            <td>Tinfish</td>
+            <td>Flavored tinfish filling for seafood lovers.</td>
+            <td>R40,00 a dozen</td>
+        </tr>
+        <tr>
+            <td>Soya</td>
+            <td>Delicious vegetarian option with spiced soya filling.</td>
+            <td>R40,00 a dozen</td>
+        </tr>
+        <tr>
+            <td>Steak Mince</td>
+            <td>Premium steak mince filling with robust flavors.</td>
+            <td>R40,00 a dozen</td>
                 </tbody>
             </table>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Z Snacks. All rights reserved.</p>
+        <p>&copy; January,2025 Z Snacks. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
