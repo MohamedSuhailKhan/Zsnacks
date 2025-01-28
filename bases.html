@@ -157,9 +157,20 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 20px;
-                margin: 2rem 0;
+                margin: 2rem auto; /* Centering horizontally */
+                display: block; /* Makes margin:auto work */
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             }
+
+            .centered-image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px;
+                margin: 2rem auto; /* Centering horizontally */
+                display: block; /* Makes margin:auto work */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+
 
             table {
                 width: 100%;
@@ -238,7 +249,7 @@
             <a class="nav-button" href="minipizza.html">Next →</a>
         </div>
     
-            <img src="images/base.png" alt="Pizza Bases">
+            <img src="images/base.png" alt="Pizza Bases" style="width: 50%; display: block; margin: 0 auto;" class="centered-image">
             <table>
                 <thead>
                     <tr>
