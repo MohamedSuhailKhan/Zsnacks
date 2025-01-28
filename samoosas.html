@@ -33,7 +33,7 @@
             }
 
             .logo img {
-                max-width: 300px;
+                max-width: 250px;
                 transition: transform 0.3s ease;
                 display: block;
                 margin: 0 auto;
@@ -43,26 +43,19 @@
                 transform: scale(1.02);
             }
 
-            nav {
-                background-color: rgba(255, 255, 255, 0.1);
-                padding: 1rem 0;
-                margin-top: 1rem;
-                backdrop-filter: blur(5px);
-            }
-
             nav ul {
                 list-style: none;
                 padding: 0;
                 display: flex;
                 justify-content: center;
-                gap: 3rem;
+                gap: 2rem;
                 margin: 0;
             }
 
             nav ul li a {
                 color: #ffffff;
                 text-decoration: none;
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: 600;
                 transition: all 0.3s ease;
                 padding: 0.5rem 1rem;
@@ -72,14 +65,12 @@
             nav ul li a:hover {
                 background-color: var(--secondary-yellow);
                 color: var(--text-color);
-                text-shadow: none;
-                text-decoration: none;
             }
 
             main {
                 max-width: 1400px;
                 margin: 2rem auto;
-                padding: 0 2rem;
+                padding: 0 1rem;
             }
 
             section {
@@ -93,7 +84,7 @@
 
             h2 {
                 color: var(--secondary-red);
-                font-size: 2.5rem;
+                font-size: 2rem;
                 text-align: center;
                 margin-bottom: 2rem;
                 font-family: 'Poppins', sans-serif;
@@ -108,7 +99,7 @@
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 100px;
+                width: 80px;
                 height: 4px;
                 background: linear-gradient(90deg, var(--secondary-red), var(--secondary-yellow));
                 border-radius: 2px;
@@ -119,14 +110,15 @@
                 justify-content: space-between;
                 align-items: center;
                 margin: 0 -2rem 2rem -2rem;
-                padding: 0 4rem;
+                padding: 0 2rem;
+                flex-wrap: wrap;
             }
 
             .nav-button {
                 color: white;
                 text-decoration: none;
-                font-size: 1.1rem;
-                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+                padding: 0.6rem 1.2rem;
                 border-radius: 50px;
                 background: linear-gradient(135deg, var(--secondary-red), var(--primary-color));
                 transition: all 0.3s ease;
@@ -145,16 +137,8 @@
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             }
 
-            a {
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: none;
-            }
-
             img {
-                max-width: 50%;
+                max-width: 100%;
                 height: auto;
                 display: block;
                 margin: 2rem auto;
@@ -192,28 +176,34 @@
                 background: linear-gradient(135deg, var(--secondary-red), var(--primary-color));
                 color: white;
                 text-align: center;
-                padding: 2rem 0;
+                padding: 1.5rem 0;
                 margin-top: 4rem;
                 border-top: 4px solid var(--secondary-yellow);
             }
 
             @media (max-width: 768px) {
-                .logo img {
-                    max-width: 250px;
+                .header-container {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 1rem;
                 }
 
                 nav ul {
                     flex-direction: column;
-                    align-items: center;
                     gap: 1rem;
                 }
 
-                table {
+                nav ul li a {
                     font-size: 0.9rem;
                 }
 
-                .header-container {
-                    padding: 0 2rem;
+                h2 {
+                    font-size: 1.8rem;
+                }
+
+                th, td {
+                    padding: 0.8rem;
                 }
             }
         </style>
@@ -235,9 +225,9 @@
         <main>
             <section id="flavors">
                 <div class="header-container">
-                    <a class="nav-button" href="index.html">← Back</a>
+                    <a class="nav-button" href="index.html">&larr; Back</a>
                     <h2>Delicious Samoosa Flavors</h2>
-                    <a class="nav-button" href="springroll.html">Next →</a>
+                    <a class="nav-button" href="springroll.html">Next &rarr;</a>
                 </div>
 
                 <img src="https://millingcoconuts.co.za/wp-content/uploads/2023/05/Cheese-and-Corn-Samoosas_1.jpg" alt="Samoosas">
@@ -287,7 +277,4 @@
         </main>
 
         <footer>
-            <p>&copy; 2025 Z Snacks. All rights reserved.</p>
-        </footer>
-    </body>
-</html
+            <p>&copy; 2025 Z Snacks. All rights reserved.</p
