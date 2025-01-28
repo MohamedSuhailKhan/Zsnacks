@@ -128,7 +128,7 @@
                 box-sizing: border-box;
             }
 
-            .header-container h2{
+            .header-container h2 {
                 margin: 0;
                 text-align: center;
             }
@@ -145,6 +145,7 @@
                 gap: 0.5rem;
                 border: 2px solid transparent;
                 text-align: center;
+                white-space: nowrap;
             }
 
             .nav-button:hover {
@@ -225,23 +226,18 @@
                 }
 
                 .header-container {
-                    flex-direction: column;
+                    flex-direction: row; /* Changed from column to row */
                     gap: 1rem;
                     margin: 0 0 1.5rem 0;
+                    padding: 0;
+                    justify-content: space-between;
                 }
-                
-                .header-container h2{
+
+                .header-container h2 {
                     font-size: 1.8rem;
                     margin: -1;
                 }
-
-                .nav-button-container{
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding: 0 1rem;
-                }
-
+                
                 .nav-button {
                     font-size: 0.9rem;
                     padding: 0.5rem 1rem;
@@ -272,12 +268,12 @@
             <section id="flavors">
                 <div class="header-container">
                     <a class="nav-button" href="index.html">&larr; Back</a>
-                    <h2>Delicious Samoosa Flavors</h2>
                     <a class="nav-button" href="springroll.html">Next &rarr;</a>
                 </div>
+                <h2>Delicious Samoosa Flavors</h2>
 
                 <img src="https://millingcoconuts.co.za/wp-content/uploads/2023/05/Cheese-and-Corn-Samoosas_1.jpg" alt="Samoosas">
-                
+
                 <table>
                     <thead>
                         <tr>
@@ -323,4 +319,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2025 Z Snacks. All rights reserved.</p
+            <p>&copy; 2025 Z Snacks. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
