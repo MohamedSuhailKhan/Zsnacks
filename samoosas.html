@@ -122,8 +122,10 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin: 0 -2rem 2rem -2rem;
-                padding: 0 4rem;
+                margin: 0 auto 2rem auto;
+                padding: 0 1rem;
+                max-width: calc(100% - 2rem);
+                box-sizing: border-box;
             }
 
             .nav-button {
@@ -218,16 +220,23 @@
                 }
 
                 .header-container {
-                    padding: 0 2rem;
+                    padding: 0 0.5;
+                    margin: 0 auto 1.5rem auto;
+                    gap: 0.5rem;
+                }
+                
+                .header-container h2{
+                    font-size: 1.8rem;
+                    margin: 0;
                 }
 
                 .nav-button {
-                    font-size: 1rem;
-                    padding: 0.6rem 1.2rem;
+                    font-size: 0.9rem;
+                    padding: 0.5rem 1rem;
                 }
 
                 img {
-                    width: 90%;
+                    width: 75%;
                     margin: 1rem auto;
                 }
             }
