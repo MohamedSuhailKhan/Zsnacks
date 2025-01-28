@@ -122,15 +122,21 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin: 0 -2rem 2rem -2rem;
-                padding: 0 4rem;
+                width: 100%;
+                margin: 0 0 2rem 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .header-container h2 {
+                margin: 0;
+                text-align: center;
             }
 
             .nav-button {
                 color: white;
                 text-decoration: none;
                 font-size: 1.1rem;
-                padding: 0.8rem 1.5rem;
                 border-radius: 50px;
                 background: linear-gradient(135deg, var(--secondary-red), var(--primary-color));
                 transition: all 0.3s ease;
@@ -138,6 +144,8 @@
                 align-items: center;
                 gap: 0.5rem;
                 border: 2px solid transparent;
+                text-align: center;
+                white-space: nowrap;
             }
 
             .nav-button:hover {
@@ -158,7 +166,7 @@
             }
 
             img {
-                width: 100%;
+                max-width: 100%;
                 height: auto;
                 border-radius: 20px;
                 margin: 2rem auto;
@@ -218,16 +226,25 @@
                 }
 
                 .header-container {
-                    padding: 0 2rem;
+                    flex-direction: row; /* Changed from column to row */
+                    gap: 1rem;
+                    margin: 0 0 1.5rem 0;
+                    padding: 0;
+                    justify-content: space-between;
                 }
 
+                .header-container h2 {
+                    font-size: 1.8rem;
+                    margin: -1;
+                }
+                
                 .nav-button {
-                    font-size: 1rem;
-                    padding: 0.6rem 1.2rem;
+                    font-size: 0.9rem;
+                    padding: 0.5rem 1rem;
                 }
 
                 img {
-                    width: 100%;
+                    width: 90%;
                     margin: 1rem auto;
                 }
             }

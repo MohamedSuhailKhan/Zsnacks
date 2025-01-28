@@ -89,6 +89,10 @@
                 border-radius: 20px;
                 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
                 border-left: 4px solid var(--secondary-red);
+                width: 100%;
+                box-sizing: border-box;
+                max-width: 1400px;
+                margin: 0 auto;
             }
 
             h2 {
@@ -118,15 +122,21 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin: 0 -2rem 2rem -2rem;
-                padding: 0 4rem;
+                width: 100%;
+                margin: 0 0 2rem 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .header-container h2 {
+                margin: 0;
+                text-align: center;
             }
 
             .nav-button {
                 color: white;
                 text-decoration: none;
                 font-size: 1.1rem;
-                padding: 0.8rem 1.5rem;
                 border-radius: 50px;
                 background: linear-gradient(135deg, var(--secondary-red), var(--primary-color));
                 transition: all 0.3s ease;
@@ -134,6 +144,8 @@
                 align-items: center;
                 gap: 0.5rem;
                 border: 2px solid transparent;
+                text-align: center;
+                white-space: nowrap;
             }
 
             .nav-button:hover {
@@ -160,7 +172,6 @@
                 margin: 2rem auto;
                 display: block;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
             }
 
             table {
@@ -215,12 +226,26 @@
                 }
 
                 .header-container {
-                    padding: 0 2rem;
+                    flex-direction: row; /* Changed from column to row */
+                    gap: 1rem;
+                    margin: 0 0 1.5rem 0;
+                    padding: 0;
+                    justify-content: space-between;
                 }
 
+                .header-container h2 {
+                    font-size: 1.8rem;
+                    margin: -1;
+                }
+                
                 .nav-button {
-                    font-size: 1rem;
-                    padding: 0.6rem 1.2rem;
+                    font-size: 0.9rem;
+                    padding: 0.5rem 1rem;
+                }
+
+                img {
+                    width: 75%;
+                    margin: 1rem auto;
                 }
 
                  /* Make image 15% smaller on larger screens (PC) */
