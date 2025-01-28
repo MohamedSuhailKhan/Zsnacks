@@ -28,7 +28,6 @@
                 background: linear-gradient(135deg, var(--primary-color), var(--secondary-red));
                 padding: 1.5rem 0;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                position: sticky;
                 top: 0;
                 z-index: 1000;
             }
@@ -158,9 +157,11 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 20px;
-                margin: 2rem 0;
+                margin: 2rem auto; /* Centering horizontally */
+                display: block; /* Makes margin:auto work */
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             }
+
 
             table {
                 width: 100%;
@@ -240,7 +241,7 @@
                     <a class="nav-button" href="pies.html">Next →</a>
                 </div>
 
-                <img src="https://jackiem.com.au/wpinstall/wp-content/uploads/2022/01/mini-spring-rolls-minced-meat.jpg" alt="Springroll">
+                <img src="https://jackiem.com.au/wpinstall/wp-content/uploads/2022/01/mini-spring-rolls-minced-meat.jpg" alt="Springroll"  style="width: 70%; display: block; margin: 0 auto;">>
                 
                 <table>
                     <thead>

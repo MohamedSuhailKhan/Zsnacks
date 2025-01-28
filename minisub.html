@@ -28,7 +28,6 @@
                 background: linear-gradient(135deg, var(--primary-color), var(--secondary-red));
                 padding: 1.5rem 0;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                position: sticky;
                 top: 0;
                 z-index: 1000;
             }
@@ -158,7 +157,8 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 20px;
-                margin: 2rem 0;
+                margin: 2rem auto; /* Centering horizontally */
+                display: block; /* Makes margin:auto work */
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             }
 
@@ -186,6 +186,15 @@
 
             tr:hover {
                 background-color: #f8f8f8;
+            }
+
+            .centered-image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px;
+                margin: 2rem auto; /* Centering horizontally */
+                display: block; /* Makes margin:auto work */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             }
 
             footer {
@@ -240,7 +249,7 @@
                     <a class="nav-button" href="savorybun.html">Next →</a>
                 </div>
 
-                <img src="images/minisub.jpg" alt="minisub">
+                <img src="images/minisub.jpg" alt="minisub"  class="centered-image">
                 
                 <table>
                     <thead>
