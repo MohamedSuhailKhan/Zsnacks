@@ -157,20 +157,11 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 20px;
-                margin: 2rem auto; /* Centering horizontally */
-                display: block; /* Makes margin:auto work */
+                margin: 2rem auto;
+                display: block;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
             }
-
-            .centered-image {
-                max-width: 100%;
-                height: auto;
-                border-radius: 20px;
-                margin: 2rem auto; /* Centering horizontally */
-                display: block; /* Makes margin:auto work */
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            }
-
 
             table {
                 width: 100%;
@@ -220,11 +211,31 @@
 
                 table {
                     font-size: 0.9rem;
+                    overflow-x: auto;
                 }
 
                 .header-container {
                     padding: 0 2rem;
                 }
+
+                .nav-button {
+                    font-size: 1rem;
+                    padding: 0.6rem 1.2rem;
+                }
+
+                 /* Make image 15% smaller on larger screens (PC) */
+            @media (min-width: 1025px) {
+                img {
+                    transform: scale(0.85); /* 15% smaller */
+                }
+            }
+
+            /* Make image 25% larger on mobile screens */
+            @media (max-width: 768px) {
+                img {
+                    transform: scale(1.25); /* 25% bigger */
+                }
+            }
             }
         </style>
     </head>
@@ -236,7 +247,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#pizza">Pizza Bases</a></li>
+                <li><a href="#pizza">Base Sizes</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>

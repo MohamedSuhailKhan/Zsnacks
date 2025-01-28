@@ -157,17 +157,8 @@
                 max-width: 100%;
                 height: auto;
                 border-radius: 20px;
-                margin: 2rem auto; /* Centering horizontally */
-                display: block; /* Makes margin:auto work */
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            }
-
-            .centered-image {
-                max-width: 100%;
-                height: auto;
-                border-radius: 20px;
-                margin: 2rem auto; /* Centering horizontally */
-                display: block; /* Makes margin:auto work */
+                margin: 2rem auto;
+                display: block;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             }
 
@@ -219,10 +210,21 @@
 
                 table {
                     font-size: 0.9rem;
+                    overflow-x: auto;
                 }
 
                 .header-container {
                     padding: 0 2rem;
+                }
+
+                .nav-button {
+                    font-size: 1rem;
+                    padding: 0.6rem 1.2rem;
+                }
+
+                img {
+                    width: 90%;
+                    margin: 1rem auto;
                 }
             }
         </style>
@@ -235,7 +237,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#mini-pizzas">Mini Pizzas</a></li>
+                <li><a href="#mini-pizzas">Flavors</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>

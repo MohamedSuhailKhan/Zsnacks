@@ -154,10 +154,11 @@
             }
 
             img {
-                max-width: 100%;
+                width: 100%;
                 height: auto;
                 border-radius: 20px;
-                margin: 2rem 0;
+                margin: 2rem auto;
+                display: block;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             }
 
@@ -209,10 +210,21 @@
 
                 table {
                     font-size: 0.9rem;
+                    overflow-x: auto;
                 }
 
                 .header-container {
                     padding: 0 2rem;
+                }
+
+                .nav-button {
+                    font-size: 1rem;
+                    padding: 0.6rem 1.2rem;
+                }
+
+                img {
+                    width: 100%;
+                    margin: 1rem auto;
                 }
             }
         </style>
@@ -239,9 +251,10 @@
                     <a class="nav-button" href="minisub.html">Next →</a>
                 </div>
 
+                <!-- Image adjusted for responsive layout -->
                 <img src="https://i0.wp.com/themissinglokness.com/wp-content/uploads/2015/03/666B8604.jpg?fit=3000%2C2000&ssl=1" 
                      alt="Pies" 
-                     style="width: 50%; display: block; margin: 0 auto;">
+                     style="width: 100%; height: auto; display: block; margin: 0 auto;">
                 
                 <table>
                     <thead>
