@@ -512,6 +512,16 @@ function topFunction() {
   window.requestAnimationFrame(animate);
 }
 </script>
+
+<script>
+    document.querySelector('.pdf-button').addEventListener('click', function (e) {
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            e.preventDefault();
+            window.open('images/2024-11-19 SAK Confectioners (Pty) Ltd ta Z Snacks Letter of Confirmation-1.pdf', '_blank');
+        }
+    });
+</script>
+
                           <footer>
             <p>&copy;2025 Z Snacks. All rights reserved.</p>
         </footer>
