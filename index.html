@@ -134,6 +134,7 @@
                 flex-direction: column;
                 align-items: center;
                 border: 2px solid transparent;
+                text-align: center;
             }
 
             .product:hover {
@@ -330,10 +331,22 @@
                     gap: 1rem;
                 }
 
-                .product-list, .shops-list {
+                .product-list {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates responsive columns */
+                    gap: 20px; /* Adjust spacing between items */
+                }
+
+                .product-list .product-card:last-child {
+                    place-self: center; /* Centers only the last item */
+                }
+
+
+                .shops-list{
                     grid-template-columns: 4,1fr;
                 }
             }
+
         </style>
     </head>
     <body>
