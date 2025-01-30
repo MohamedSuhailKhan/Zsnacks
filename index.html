@@ -168,9 +168,9 @@
 
             .shops-list {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
                 gap: 2rem;
                 padding: 1rem;
+                grid-template-columns: 4,1fr;
             }
 
             .shops {
@@ -332,21 +332,14 @@
                 }
 
                 .product-list {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates responsive columns */
-                    gap: 20px; /* Adjust spacing between items */
+                    grid-template-columns: 3,1fr;
                 }
-
-                .product-list .product-card:last-child {
-                    place-self: center; /* Centers only the last item */
-                }
-
 
                 .shops-list{
                     grid-template-columns: 4,1fr;
                 }
             }
-
+            
         </style>
     </head>
     <body>
