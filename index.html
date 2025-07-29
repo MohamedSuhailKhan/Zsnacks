@@ -1,558 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-           <!-- Google tag (gtag.js) -->
+<head>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRS4ESEF5M"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-DRS4ESEF5M');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DRS4ESEF5M');
     </script>
-    
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Z Snacks - The Snack Kings</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
-        <style>
-            :root {
-                --primary-color: #e06158;
-                --secondary-red: #ff4d4d;
-                --secondary-yellow: #ffd700;
-                --background-color: #fff8f8;
-                --text-color: #333333;
-                --card-bg: #ffffff;
-            }
 
-            body {
-                font-family: 'Poppins', sans-serif;
-                background-color: var(--background-color);
-                margin: 0;
-                padding: 0;
-                color: var(--text-color);
-                line-height: 1.6;
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Snacks - The Snack Kings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/Logo.png" alt="Z Snacks Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#shops">Shops</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            header {
-                background: linear-gradient(135deg, var(--primary-color), var(--secondary-red));
-                padding: 1.5rem 0;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                position: static;
-                top: 0;
-                z-index: 1000;
-                width: 100%;
-            }
-
-            .logo img {
-                max-width: 300px;
-                transition: transform 0.3s ease;
-                display: block;
-                margin: 0 auto;
-                border-radius: 15px;
-            }
-
-            .logo img:hover {
-                transform: scale(1.02);
-            }
-
-            nav {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 1rem 0;
-            margin-top: 1rem;
-            backdrop-filter: blur(5px)
-            }
-
-            nav ul {
-                list-style: none;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                gap: 3rem;
-                margin: 0;
-            }
-
-            nav ul li a {
-                color: #ffffff;
-                text-decoration: none;
-                font-size: 1.1rem;
-                font-weight: 600;
-                transition: all 0.3s ease;
-                padding: 0.5rem 1rem;
-                border-radius: 25px;
-            }
-
-            nav ul li a:hover {
-                background-color: var(--secondary-yellow);
-                color: var(--text-color);
-                text-shadow: none;
-                text-decoration: none;
-            }
-
-            main {
-                max-width: 1400px;
-                margin: 2rem auto;
-                padding: 0 2rem;
-            }
-
-            section {
-                margin-bottom: 4rem;
-                padding: 2rem;
-                background-color: var(--card-bg);
-                border-radius: 20px;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-                border-left: 4px solid var(--secondary-red);
-            }
-
-            h2 {
-                color: var(--secondary-red);
-                font-size: 2.5rem;
-                text-align: center;
-                margin-bottom: 2rem;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 700;
-                position: relative;
-                padding-bottom: 1rem;
-            }
-
-            h2::after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 100px;
-                height: 4px;
-                background: linear-gradient(90deg, var(--secondary-red), var(--secondary-yellow));
-                border-radius: 2px;
-            }
-
-            .product-list {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 2rem;
-                padding: 1rem;
-            }
-
-            .product {
-                background: white;
-                border-radius: 15px;
-                padding: 1.5rem;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border: 2px solid transparent;
-                text-align: center;
-            }
-
-            .product:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-                border-color: var(--secondary-yellow);
-            }
-
-            .product img {
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
-                border-radius: 10px;
-                margin-bottom: 1rem;
-            }
-
-            .product h3 {
-                color: var(--secondary-red);
-                margin: 1rem 0;
-                font-size: 1.3rem;
-            }
-
-            .product p {
-                color: var(--text-color);
-                font-weight: 600;
-                margin: 0.5rem 0;
-                background-color: var(--secondary-yellow);
-                padding: 0.5rem 1rem;
-                border-radius: 20px;
-            }
-
-            .shops-list {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 2rem;
-                padding: 1rem;
-                grid-template-columns: 4,1fr;
-            }
-
-            .shops {
-                background: white;
-                border-radius: 15px;
-                padding: 1.5rem;
-                text-align: center;
-                transition: transform 0.3s ease;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-                border: 2px solid transparent;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .shops:hover {
-                transform: translateY(-5px);
-                border-color: var(--secondary-red);
-            }
-
-            .shops img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 10px;
-                margin-bottom: 1rem;
-            }
-
-            .shops h3 {
-                color: var(--secondary-red);
-            }
-
-            #certification {
-                text-align: center;
-            }
-
-            .sanha-logo img {
-                max-width: 200px;
-                margin: 2rem auto;
-                border: 3px solid var(--secondary-yellow);
-                padding: 1rem;
-                border-radius: 10px;
-            }
-
-            #contact {
-            text-align: center;
-            background: var(--card-bg);
-            color: var(--text-color);
-            border-left: 4px solid var(--secondary-red);
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            padding: 2rem;
-        }
-
-        #contact h2 {
-            color: var(--secondary-red);
-            margin-bottom: 2rem;
-        }
-
-        #contact p {
-            margin: 1rem 0;
-            font-size: 1.1rem;
-        }
-
-        #contact a {
-            color: var(--text-color);
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 600;
-        }
-
-        .whatsapp-container {
-            margin: 2rem 0;
-        }
-
-        .whatsapp-button {
-            display: inline-flex;
-            align-items: center;
-            background: linear-gradient(135deg, #25D366, #128C7E);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
-        }
-
-        .whatsapp-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
-        }
-
-        .whatsapp-button img {
-            width: 24px;
-            margin-right: 10px;
-        }
-
-            #myBtn {
-                display: none;
-                position: fixed;
-                bottom: 30px;
-                left: 30px;
-                z-index: 99;
-                border: none;
-                outline: none;
-                background: linear-gradient(135deg, var(--secondary-red), var(--primary-color));
-                color: white;
-                cursor: pointer;
-                padding: 15px;
-                border-radius: 50%;
-                font-size: 18px;
-                transition: all 0.3s ease;
-                width: 50px;
-                height: 50px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-                border: 2px solid var(--secondary-yellow);
-            }
-
-            #myBtn:hover {
-                background: var(--secondary-yellow);
-                transform: translateY(-3px);
-            }
-
-            .pdf-button{
-                background-color: gold;
-                color: black;
-                padding: 10px 20px;
-                text-decoration: none;
-                border: none;
-                border-radius: 30px;
-                cursor: pointer;
-                font-size: 16px;
-                font-weight: bold;
-                transition: background-color 0.3 ease;
-            }
-
-            .pdf-button:hover{
-                background-color: #d4af37;
-                transform: translate(-3px);
-            }
-
-            footer {
-                background: linear-gradient(135deg, var(--secondary-red), var(--primary-color));
-                color: white;
-                text-align: center;
-                padding: 2rem 0;
-                margin-top: 4rem;
-                border-top: 4px solid var(--secondary-yellow);
-            }
-
-            @media (max-width: 768px) {
-                .logo img {
-                    max-width: 250px;
-                }
-
-                nav ul {
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 1rem;
-                }
-
-                .product-list {
-                    grid-template-columns: 3,1fr;
-                }
-
-                .shops-list{
-                    grid-template-columns: 4,1fr;
-                }
-            }          
-        </style>
-    </head>
-      
-    <body>
-        <header>
-            <div class="logo">
-                <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/Logo.png" alt="Z Snacks Logo">
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <a href="samoosas.html" id="samoosaLink">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwOLEFyX0335nfQi4fthybiL5XU284j303w&s" alt="Samoosas">
+                    </a>
+                    <h3>Samoosas</h3>
+                    <p>Price: R40.00 per dozen</p>
+                </div>
+                <div class="product">
+                    <a href="springroll.html" id="springrollLink">
+                    <img src="images/springroll.jpg" alt="Spring Rolls">
+                    </a>
+                    <h3>Spring Rolls</h3>
+                    <p>Price: R55.00 per dozen</p>
+                </div>
+                <div class="product">
+                    <a href="pies.html" id="piesLink">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r4KEEgsGs42IHEWfQzxtI0SlarBIDDa2QQ&s" alt="Pies">
+                    </a>
+                    <h3>Pies</h3>
+                    <p>Price: R60.00 per dozen</p>
+                </div>
+                <div class="product">
+                    <a href="minisub.html" id="minisubLink">
+                    <img src="images/minisub.jpg" alt="Mini Sub">
+                    </a>
+                    <h3>Mini Sub</h3>
+                    <p>Price: R70.00 per dozen</p>
+                </div>
+                <div class="product">
+                    <a href="bun.html" id="bunLink">
+                    <img src="images/bun.jpg" alt="Savory Buns">
+                    </a>
+                    <h3>Savory Buns</h3>
+                    <p>Price: R70.00 per dozen</p>
+                </div>
+                <div class="product">
+                    <a href="bases.html" id="baseLink">
+                    <img src="images/pizza.jpg" alt="Pizza Bases">
+                    </a>
+                    <h3>Pizza Bases</h3>
+                    <p>Price: R40.00 - R45.00</p>
+                </div>
+                <div class="product">
+                    <a href="minipizza.html" id="minipizzaLink">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2q-6tNDEMYLHyKHkPc_ckfIhGAAmS8UD4g&s" alt="Mini Pizzas">
+                    </a>
+                    <h3>Mini Pizzas</h3>
+                    <p>Price: R35.00 for 6's</p>
+                </div>
+                <div class="product">
+                    <a href="pur.html" id="purLink">
+                    <img src="images/pur.jpg" alt="HomemadePur">
+                    </a>
+                    <h3>Homemade Pur</h3>
+                    <p>Price: R90.00</p>
+                </div>
+                <div class="product">
+                    <a href="wheel.html" id="wheelLink">
+                    <img src="images/coconut.jpg" alt="Clusterwheel">
+                    </a>
+                    <h3>Chocolate Cluster Wheel</h3>
+                    <p>Price: R550 a tub</p>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#products">Products</a>
-                    </li>
-                    <li>
-                        <a href="#shops">Shops</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="products">
-                <h2>Our Products</h2>
-                <div class="product-list">
-                    <div class="product">
-                        <a href="samoosas.html" id="samoosaLink">
-                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwOLEFyX0335nfQi4fthybiL5XU284j303w&s" alt="Samoosas"><span></span></a>
-                           <h3>Samoosas</h3>
-                        <p>Price: R40.00 per dozen</p>
-                    </div>
-                    <div class="product">
-                        <a href="springroll.html" id="springrollLink">
-                        <img src="images/springroll.jpg" alt="Spring Rolls"><span></span></a>
-                        <h3>Spring Rolls</h3>
-                        <p>Price: R55.00 per dozen</p>
-                    </div>
-                    <div class="product">
-                        <a href="pies.html" id="piesLink">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r4KEEgsGs42IHEWfQzxtI0SlarBIDDa2QQ&s" alt="Pies"><span></span></a>
-                        <h3>Pies</h3>
-                        <p>Price: R60.00 per dozen</p>
-                    </div>
-                    <div class="product">
-                        <a href="minisub.html" id="minisubLink">
-                        <img src="images/minisub.jpg" alt="Mini Sub"><span></span></a>
-                        <h3>Mini Sub</h3>
-                        <p>Price: R70.00 per dozen</p>
-                    </div>
-                    <div class="product">
-                        <a href="bun.html" id="bunLink">
-                        <img src="images/bun.jpg" alt="Savory Buns"><span></span></a>
-                        <h3>Savory Buns</h3>
-                        <p>Price: R70.00 per dozen</p>
-                    </div>
-                    <div class="product">
-                        <a href="bases.html" id="baseLink">
-                        <img src="images/pizza.jpg" alt="Pizza Bases"><span></span></a>
-                        <h3>Pizza Bases</h3>
-                        <p>Price: R40.00 - R45.00</p>
-                    </div>
-                    <div class="product">
-                        <a href="minipizza.html" id="minipizzaLink">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2q-6tNDEMYLHyKHkPc_ckfIhGAAmS8UD4g&s" alt="Mini Pizzas"><span></span></a>
-                        <h3>Mini Pizzas</h3>
-                        <p>Price: R35.00 for 6's</p>
-                    </div>
-                    <div class="product">
-                        <a href="pur.html" id="purLink">
-                        <img src="images/pur.jpg" alt="HomemadePur"><span></span></a>
-                        <h3>Homemade Pur</h3>
-                        <p>Price: R90.00</p>
-                    </div>
-                    <div class="product">
-                        <a href="wheel.html" id="wheelLink">
-                        <img src="images/coconut.jpg" alt="Clusterwheel"><span></span></a>
-                        <h3>Chocolate Cluster Wheel</h3>
-                        <p>Price: R550 a tub</p>
-                </div>
-            </section>
-            <section id="shops">
-                <h2>Some Shops We Supply</h2>
-                <div class="shops-list">
-                    <div class="shops">
-                        <a href="https://spice-world.co.za/">
-                            <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/spiceworld.jpg" width="220" height="80" alt="Spiceworld">
-                        </a>
-                        <h3>Spiceworld</h3>
-                        <p>Sparks Rd, Overport, Durban, 4067</p>
-                    </div>
-                    
-                    <div class="shops">
-                        <a href="https://lotusprayergoods.co.za/">
-                            <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/lotus.png" width="220" height="80" alt="lotus">
-                        </a>
-                        <h3>Lotus Prayer Goods</h3>
-                        <p>No. 1 6 Teal Place, Lotus Park Isipingo, Durban</p>
-                    </div>
-                    
-                    <div class="shops">
-                        <a href="https://www.desaismeats.co.za/">
-                            <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/desais.jpg" width="220" height="80" alt="Desais">
-                        </a>
-                        <h3>Desais</h3>
-                        <p>88 Spearman Road, Sparks, Sydenham, 4091, Durban</p>
-                    </div>
-                    
-                    <div class="shops">
-                        <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/exambux.jpg" width="225" height="50" alt="Exam Bux">
-                        <h3>Exam Bux</h3>
-                        <p>All in Durban</p>
-                    </div>
-                </div>
-            </section>
+        </section>
 
-            <section id="certification">
-                <h2>Certification</h2>
-                <div class="sanha-logo">
-                    <a href="https://sanha.org.za/certified-establishmen/listing/z-snacks-sak-confectionery/"><img src="images/sanha.jpg"><span></span></a>
-                    <p>
+        <section id="shops">
+            <h2>Some Shops We Supply</h2>
+            <div class="shops-list">
+                <div class="shops">
+                    <a href="https://spice-world.co.za/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/spiceworld.jpg" width="220" height="80" alt="Spiceworld">
+                    </a>
+                    <h3>Spiceworld</h3>
+                    <p>Sparks Rd, Overport, Durban, 4067</p>
+                </div>
+                <div class="shops">
+                    <a href="https://lotusprayergoods.co.za/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/lotus.png" width="220" height="80" alt="lotus">
+                    </a>
+                    <h3>Lotus Prayer Goods</h3>
+                    <p>No. 1 6 Teal Place, Lotus Park Isipingo, Durban</p>
+                </div>
+                <div class="shops">
+                    <a href="https://www.desaismeats.co.za/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/desais.jpg" width="220" height="80" alt="Desais">
+                    </a>
+                    <h3>Desais</h3>
+                    <p>88 Spearman Road, Sparks, Sydenham, 4091, Durban</p>
+                </div>
+                <div class="shops">
+                    <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/exambux.jpg" width="225" height="50" alt="Exam Bux">
+                    <h3>Exam Bux</h3>
+                    <p>All in Durban</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certification">
+            <h2>Certification</h2>
+            <div class="sanha-logo">
+                <a href="https://sanha.org.za/certified-establishmen/listing/z-snacks-sak-confectionery/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/sanha.jpg" alt="SANHA Logo">
+                </a>
+                <p>
                     <a href="images/2024-11-19 SAK Confectioners (Pty) Ltd ta Z Snacks Letter of Confirmation-1.pdf" class="pdf-button" target="_blank" rel="noopener noreferrer">
                         View Certification
-                    </a>   
-                        <h3>We are certified Halaal by SANHA.</h3>
-                </div>
-            </section>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>Email: <a href="mailto:Sallim7866@gmail.com">Sallim7866@gmail.com</a></p>
-                <p>Phone: <a href="tel:0763454692">076 345 4692</a></p>
-                <div class="whatsapp-container">
-                    <a href="https://wa.me/+27763454692" class="whatsapp-button" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-                        Chat with us on WhatsApp
                     </a>
-                </div>
-            </section>
-            </main>
-            
-                         <script src="script.js"></script>
-       
-<div style="height:30px;"></div>
+                </p>
+                <h3>We are certified Halaal by SANHA.</h3>
+            </div>
+        </section>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"> ↑ </button>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:Sallim7866@gmail.com">Sallim7866@gmail.com</a></p>
+            <p>Phone: <a href="tel:0763454692">076 345 4692</a></p>
+            <div class="whatsapp-container">
+                <a href="https://wa.me/+27763454692" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                    Chat with us on WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
 
-<script>
-// Get the button
-let mybutton = document.getElementById("myBtn");
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> ↑ </button>
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    <footer>
+        <p>&copy;2025 Z Snacks. All rights reserved.</p>
+    </footer>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  const scrollDuration = 500; // Adjust duration in milliseconds (0.5 seconds)
-  const easing = 'easeInOut'; // Optional: Customize easing function
-
-  const startLocation = document.documentElement.scrollTop || document.body.scrollTop;
-  const targetPosition = 0;
-  let startTime = null;
-
-  const animate = (currentTime) => {
-    if (startTime === null) startTime = currentTime;
-    const timeElapsed = currentTime - startTime;
-    const progress = timeElapsed / scrollDuration;
-    const easedProgress = progress; // Use `easeInOut` if desired
-    const scroll = targetPosition + (startLocation - targetPosition) * easedProgress;
-    document.documentElement.scrollTop = scroll;
-    document.body.scrollTop = scroll; // For compatibility
-
-    if (Math.abs(scroll - targetPosition) > 1) {
-      window.requestAnimationFrame(animate);
-    } else {
-      window.cancelAnimationFrame(window.requestAnimationFrame(animate));
-    }
-  };
-
-  window.requestAnimationFrame(animate);
-}
-</script>
-
-<script>
-    document.querySelector('.pdf-button').addEventListener('click', function (e) {
-        if (/Mobi|Android/i.test(navigator.userAgent)) {
-            e.preventDefault();
-            window.open('images/2024-11-19 SAK Confectioners (Pty) Ltd ta Z Snacks Letter of Confirmation-1.pdf', '_blank');
-        }
-    });
-</script>
-
-                          <footer>
-            <p>&copy;2025 Z Snacks. All rights reserved.</p>
-        </footer>
-                         
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
-

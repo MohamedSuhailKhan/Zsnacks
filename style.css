@@ -1,0 +1,391 @@
+:root {
+    --primary-color: #e06158;
+    --secondary-red: #ff4d4d;
+    --secondary-yellow: #ffd700;
+    --background-color: #fff8f8;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-red));
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Removed position: sticky; and top: 0; so the header scrolls out of view */
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.logo img:hover {
+    transform: scale(1.02);
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem 0;
+    margin-top: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-yellow);
+    color: var(--text-color);
+    text-shadow: none;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--secondary-red);
+}
+
+h2 {
+    color: var(--secondary-red);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-red), var(--secondary-yellow));
+    border-radius: 2px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.product {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+    text-align: center;
+    position: relative; /* Needed for blur effect */
+    overflow: hidden; /* Ensures blur doesn't overflow */
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--secondary-yellow);
+}
+
+.product.blur-on-click img {
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: filter 0.3s ease; /* Added for smoother blur transition */
+}
+
+.product h3 {
+    color: var(--secondary-red);
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.product p {
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0.5rem 0;
+    background-color: var(--secondary-yellow);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.shops-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Corrected grid-template-columns */
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.shops {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shops:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary-red);
+}
+
+.shops img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.shops h3 {
+    color: var(--secondary-red);
+}
+
+#certification {
+    text-align: center;
+}
+
+.sanha-logo img {
+    max-width: 200px;
+    margin: 2rem auto;
+    border: 3px solid var(--secondary-yellow);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.sanha-logo img:hover {
+    transform: scale(1.05);
+}
+
+#contact {
+    text-align: center;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-left: 4px solid var(--secondary-red);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+#contact h2 {
+    color: var(--secondary-red);
+    margin-bottom: 2rem;
+}
+
+#contact p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+#contact a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    color: var(--secondary-red);
+    text-decoration: underline;
+}
+
+.whatsapp-container {
+    margin: 2rem 0;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-button img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, var(--secondary-red), var(--primary-color));
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--secondary-yellow);
+}
+
+#myBtn:hover {
+    background: var(--secondary-yellow);
+    color: var(--text-color); /* Changed text color on hover for better contrast */
+    transform: translateY(-3px);
+}
+
+.pdf-button {
+    background-color: var(--secondary-yellow); /* Using CSS variable for consistency */
+    color: var(--text-color); /* Changed to text-color for consistency */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for consistency */
+    display: inline-block; /* Ensures padding and margin work correctly */
+    margin-top: 1rem; /* Added margin for spacing */
+}
+
+.pdf-button:hover {
+    background-color: #d4af37; /* Slightly darker yellow on hover */
+    transform: translateY(-3px);
+}
+
+footer {
+    background: linear-gradient(135deg, var(--secondary-red), var(--primary-color));
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 4px solid var(--secondary-yellow);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 250px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .product-list, .shops-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted minmax for smaller screens */
+    }
+
+    main {
+        padding: 0 1rem; /* Adjusted padding for smaller screens */
+    }
+
+    section {
+        padding: 1.5rem; /* Adjusted padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 200px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .product h3, .shops h3 {
+        font-size: 1.2rem;
+    }
+
+    .product p {
+        font-size: 0.9rem;
+    }
+
+    .whatsapp-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
