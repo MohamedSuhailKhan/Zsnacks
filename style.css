@@ -126,14 +126,17 @@ nav ul li a:hover::after {
 }
 
 .hero-image {
-    flex: 1;
+    flex: 0 1 45%; /* Limits width on desktop */
     display: flex;
     justify-content: center;
+    align-items: center;
     animation: fadeUp 1.4s ease-out;
 }
 
 .hero-image img {
     max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
     border-radius: 30px;
     box-shadow: var(--shadow-hover);
     border: 5px solid white;
@@ -555,7 +558,7 @@ footer {
         text-align: center;
         padding: 2rem 1.5rem;
         gap: 2rem;
-        margin-top: 100px;
+        margin-top: 160px; /* Increased to prevent header overlap */
     }
 
     .hero-content p {
@@ -565,6 +568,7 @@ footer {
 
     .hero-image img {
         max-width: 90%;
+        max-height: 250px;
         transform: rotate(0deg);
     }
 
