@@ -13,157 +13,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z Snacks - The Snack Kings</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- Outfit Font & Permanent Marker -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/Logo.png" alt="Z Snacks Logo">
+        <div class="header-content">
+            <div class="logo">
+                <a href="#"><img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/Logo.png" alt="Z Snacks Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#shops">Shops</a></li>
+                    <li><a href="#certification">Certification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#shops">Shops</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Z Snacks</h1>
+            <p>Premium quality, mouth-watering snacks crafted to perfection. From scrumptious samoosas to delightful savory buns.</p>
+            <a href="#products" class="cta-button">Explore Our Menu</a>
+        </div>
+    </div>
+
     <main>
-        <section id="products">
-            <h2>Our Products</h2>
+        <section id="products" class="reveal">
+            <h2 class="section-title">Our Products</h2>
             <div class="product-list">
                 <div class="product">
-                    <a href="samoosas.html" id="samoosaLink">
-                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwOLEFyX0335nfQi4fthybiL5XU284j303w&s" alt="Samoosas">
-                    </a>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwOLEFyX0335nfQi4fthybiL5XU284j303w&s" alt="Samoosas">
                     <h3>Samoosas</h3>
-                    <p>Price: R40.00 per dozen</p>
+                    <p>R40.00 / dozen</p>
+                    <a href="samoosas.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View Flavors</a>
                 </div>
                 <div class="product">
-                    <a href="springroll.html" id="springrollLink">
-                    <img src="images/springroll.jpg" alt="Spring Rolls">
-                    </a>
+                    <img src="images/springroll.jpg" alt="Spring Rolls" onerror="this.src='https://via.placeholder.com/400x300.png?text=Spring+Rolls'">
                     <h3>Spring Rolls</h3>
-                    <p>Price: R55.00 per dozen</p>
+                    <p>R55.00 / dozen</p>
+                    <a href="springroll.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View Flavors</a>
                 </div>
                 <div class="product">
-                    <a href="pies.html" id="piesLink">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5r4KEEgsGs42IHEWfQzxtI0SlarBIDDa2QQ&s" alt="Pies">
-                    </a>
                     <h3>Pies</h3>
-                    <p>Price: R60.00 per dozen</p>
+                    <p>R60.00 / dozen</p>
+                    <a href="pies.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View Flavors</a>
                 </div>
                 <div class="product">
-                    <a href="minisub.html" id="minisubLink">
-                    <img src="images/minisub.jpg" alt="Mini Sub">
-                    </a>
+                    <img src="images/minisub.jpg" alt="Mini Sub" onerror="this.src='https://via.placeholder.com/400x300.png?text=Mini+Sub'">
                     <h3>Mini Sub</h3>
-                    <p>Price: R70.00 per dozen</p>
+                    <p>R70.00 / dozen</p>
+                    <a href="minisub.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View details</a>
                 </div>
                 <div class="product">
-                    <a href="bun.html" id="bunLink">
-                    <img src="images/bun.jpg" alt="Savory Buns">
-                    </a>
+                    <img src="images/bun.jpg" alt="Savory Buns" onerror="this.src='https://via.placeholder.com/400x300.png?text=Savory+Buns'">
                     <h3>Savory Buns</h3>
-                    <p>Price: R70.00 per dozen</p>
+                    <p>R70.00 / dozen</p>
+                    <a href="savorybun.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View details</a>
                 </div>
                 <div class="product">
-                    <a href="bases.html" id="baseLink">
-                    <img src="images/pizza.jpg" alt="Pizza Bases">
-                    </a>
+                    <img src="images/pizza.jpg" alt="Pizza Bases" onerror="this.src='https://via.placeholder.com/400x300.png?text=Pizza+Bases'">
                     <h3>Pizza Bases</h3>
-                    <p>Price: R45.00 - R50.00</p>
+                    <p>R45.00 - R50.00</p>
+                    <a href="bases.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View details</a>
                 </div>
                 <div class="product">
-                    <a href="minipizza.html" id="minipizzaLink">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2q-6tNDEMYLHyKHkPc_ckfIhGAAmS8UD4g&s" alt="Mini Pizzas">
-                    </a>
                     <h3>Mini Pizzas</h3>
-                    <p>Price: R35.00 for 6's</p>
+                    <p>R35.00 for 6's</p>
+                    <a href="minipizza.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View details</a>
                 </div>
                 <div class="product">
-                    <a href="pur.html" id="purLink">
-                    <img src="images/pur.jpg" alt="HomemadePur">
-                    </a>
+                    <img src="images/pur.jpg" alt="Homemade Pur" onerror="this.src='https://via.placeholder.com/400x300.png?text=Homemade+Pur'">
                     <h3>Homemade Pur</h3>
-                    <p>Price: R90.00</p>
+                    <p>R90.00</p>
+                    <a href="pur.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View details</a>
                 </div>
                 <div class="product">
-                    <a href="wheel.html" id="wheelLink">
-                    <img src="images/coconut.jpg" alt="Clusterwheel">
-                    </a>
+                    <img src="images/coconut.jpg" alt="Clusterwheel" onerror="this.src='https://via.placeholder.com/400x300.png?text=Chocolate+Cluster+Wheel'">
                     <h3>Chocolate Cluster Wheel</h3>
-                    <p>Price: R550 a tub</p>
+                    <p>R550 a tub</p>
+                    <a href="wheel.html" class="cta-button" style="padding: 0.5rem 1.5rem; font-size: 1rem; width: auto; margin-top: 1rem;">View details</a>
                 </div>
             </div>
         </section>
 
-        <section id="shops">
-            <h2>Some Shops We Supply</h2>
+        <section id="shops" class="reveal">
+            <h2 class="section-title">Shops We Supply</h2>
             <div class="shops-list">
-                <div class="shops">
-                    <a href="https://www.medinameats.co.za/?srsltid=AfmBOorMky1sTuK7o2H8Pry8vPzr72Yg4257WpY5uXx577sU1fv_wTiG" target="_blank" rel="noopener noreferrer">
-                        <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/Medina.png" width="220" height="80" alt="Medina Meats">
-                    </a>
+                <a href="https://www.medinameats.co.za" target="_blank" rel="noopener noreferrer" class="shops" style="text-decoration:none">
+                    <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/Medina.png" alt="Medina Meats">
                     <h3>Medina Meats</h3>
-                    <p>Shop 3, 171/191 Florence Nightingale Dr, Westcliff, Chatsworth, 4092</p>
-                </div>
-                <div class="shops">
-                    <a href="https://lotusprayergoods.co.za/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/lotus.png" width="220" height="80" alt="lotus">
-                    </a>
+                    <p>Shop 3, 171/191 Florence Nightingale Dr, Westcliff, Chatsworth</p>
+                </a>
+                <a href="https://lotusprayergoods.co.za/" target="_blank" rel="noopener noreferrer" class="shops" style="text-decoration:none">
+                    <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/lotus.png" alt="Lotus">
                     <h3>Lotus Prayer Goods</h3>
-                    <p>No. 1 6 Teal Place, Lotus Park Isipingo, Durban</p>
-                </div>
-                <div class="shops">
-                    <a href="https://www.desaismeats.co.za/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/desais.jpg" width="220" height="80" alt="Desais">
-                    </a>
+                    <p>No. 1 6 Teal Place, Lotus Park, Isipingo</p>
+                </a>
+                <a href="https://www.desaismeats.co.za/" target="_blank" rel="noopener noreferrer" class="shops" style="text-decoration:none">
+                    <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/desais.jpg" alt="Desais">
                     <h3>Desais</h3>
-                    <p>88 Spearman Road, Sparks, Sydenham, 4091, Durban</p>
-                </div>
+                    <p>88 Spearman Road, Sparks, Sydenham</p>
+                </a>
                 <div class="shops">
-                    <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/exambux.jpg" width="225" height="50" alt="Exam Bux">
+                    <img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/exambux.jpg" alt="Exam Bux">
                     <h3>Exam Bux</h3>
                     <p>All in Durban</p>
                 </div>
             </div>
         </section>
 
-        <section id="certification">
-            <h2>Certification</h2>
+        <section id="certification" class="reveal">
+            <h2 class="section-title">Halaal Certified</h2>
             <div class="sanha-logo">
                 <a href="https://sanha.org.za/certified-establishmen/listing/z-snacks-sak-confectionery/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/sanha.jpg" alt="SANHA Logo">
+                    <img src="images/sanha.jpg" alt="SANHA Logo" onerror="this.src='https://via.placeholder.com/200x200.png?text=SANHA'">
                 </a>
-                <p>
-                    <a href="images/2024-11-19 SAK Confectioners (Pty) Ltd ta Z Snacks Letter of Confirmation-1.pdf" class="pdf-button" target="_blank" rel="noopener noreferrer">
-                        View Certification
-                    </a>
-                </p>
-                <h3>We are certified Halaal by SANHA.</h3>
+                <h3 style="margin-bottom: 20px; font-weight: 600;">We are completely certified by SANHA.</h3>
+                <a href="images/2024-11-19 SAK Confectioners (Pty) Ltd ta Z Snacks Letter of Confirmation-1.pdf" class="pdf-button" target="_blank" rel="noopener noreferrer">
+                    View Certificate
+                </a>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:Sallim7866@gmail.com">Sallim7866@gmail.com</a></p>
-            <p>Phone: <a href="tel:0763454692">076 345 4692</a></p>
-            <div class="whatsapp-container">
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div style="max-width: 500px; margin: 0 auto;">
+                <p style="color: var(--text-light); margin-bottom: 2rem;">Got a question or ready to place an order? Drop us a direct message on WhatsApp or email us. We look forward to hearing from you!</p>
+                <p class="contact-info">📧 <a href="mailto:Sallim7866@gmail.com">Sallim7866@gmail.com</a></p>
+                <p class="contact-info">📞 <a href="tel:0763454692">076 345 4692</a></p>
                 <a href="https://wa.me/+27763454692" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-                    Chat with us on WhatsApp
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12.012 2C6.486 2 2 6.486 2 12.012C2 13.916 2.536 15.694 3.473 17.202L2.091 21.909L6.963 20.575C8.441 21.455 10.155 21.95 12.012 21.95C17.538 21.95 22.024 17.464 22.024 11.938C22.024 6.412 17.538 1.926 12.012 1.926V2ZM12.012 19.98C10.375 19.98 8.85 19.495 7.568 18.665L7.26 18.48L4.321 19.282L5.132 16.425L4.931 16.104C4.015 14.887 3.479 13.385 3.479 11.758C3.479 7.03 7.322 3.187 12.05 3.187C16.778 3.187 20.621 7.03 20.621 11.758C20.621 16.486 16.759 20.329 12.012 20.329V19.98ZM16.73 15.348C16.471 15.218 15.205 14.591 14.965 14.508C14.725 14.425 14.551 14.388 14.375 14.646C14.199 14.904 13.684 15.514 13.527 15.698C13.37 15.883 13.214 15.901 12.955 15.772C12.696 15.643 11.859 15.375 10.875 14.502C10.098 13.815 9.576 12.96 9.42 12.702C9.263 12.444 9.403 12.305 9.533 12.176C9.644 12.057 9.782 11.882 9.912 11.734C10.041 11.586 10.086 11.475 10.171 11.291C10.256 11.107 10.211 10.941 10.147 10.812C10.082 10.683 9.566 9.41 9.354 8.894C9.143 8.397 8.932 8.468 8.777 8.455C8.63 8.441 8.455 8.441 8.279 8.441C8.103 8.441 7.818 8.506 7.579 8.764C7.34 9.022 6.647 9.668 6.647 10.978C6.647 12.288 7.608 13.541 7.747 13.725C7.886 13.909 9.593 16.592 12.247 17.653C12.875 17.904 13.373 18.056 13.771 18.172C14.417 18.375 15 18.347 15.488 18.278C16.035 18.2 17.18 17.583 17.419 16.9C17.659 16.217 17.659 15.626 17.585 15.5C17.511 15.361 17.336 15.287 17.077 15.158L16.73 15.348Z"/></svg>
+                    Chat on WhatsApp
                 </a>
             </div>
         </section>
     </main>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"> ↑ </button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> 
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
 
     <footer>
-        <p>&copy;2025 Z Snacks. All rights reserved.</p>
+        <h3 style="margin-bottom: 1rem; font-family: 'Permanent Marker', cursive; font-size: 2rem;">Z Snacks</h3>
+        <p>&copy; 2025 Z Snacks. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
