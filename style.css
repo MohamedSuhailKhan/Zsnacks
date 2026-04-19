@@ -110,12 +110,39 @@ nav ul li a:hover::after {
     min-height: 60vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 4rem;
     background: radial-gradient(circle at top right, rgba(255,215,0,0.1), transparent 40%),
                 radial-gradient(circle at bottom left, rgba(224,97,88,0.1), transparent 40%);
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
     position: relative;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: fadeUp 1.4s ease-out;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 30px;
+    box-shadow: var(--shadow-hover);
+    border: 5px solid white;
+    transform: rotate(2deg);
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: rotate(0deg) scale(1.02);
 }
 
 .hero-content h1 {
@@ -130,7 +157,6 @@ nav ul li a:hover::after {
     color: var(--text-light);
     margin-bottom: 2rem;
     max-width: 600px;
-    margin-inline: auto;
     animation: fadeUp 1s ease-out;
 }
 
@@ -209,7 +235,7 @@ section.visible {
 /* --- Product Grid --- */
 .product-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2.5rem;
 }
 
@@ -515,21 +541,47 @@ footer {
     
     nav ul {
         margin-top: 1rem;
-        gap: 1.5rem;
+        gap: 1rem;
         flex-wrap: wrap;
         justify-content: center;
     }
 
+    nav ul li a {
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+        margin-top: 100px;
+    }
+
+    .hero-content p {
+        margin-inline: auto;
+        font-size: 1.2rem;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+        transform: rotate(0deg);
+    }
+
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .section-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     section {
-        padding: 2rem 1rem;
+        padding: 2rem 1.5rem;
         margin-bottom: 3rem;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
 }
