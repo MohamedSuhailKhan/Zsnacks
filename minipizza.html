@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z Snacks - Mini Pizzas</title>
+    <title>Mini Pizzas | Z Snacks</title>
+    <meta name="description" content="Z Snacks mini pizzas in tikka chicken and saucy steak. R40 per 6 pieces. Halaal certified.">
+    <meta name="theme-color" content="#fff8ec">
+    <link rel="canonical" href="https://www.zsnacks.co.za/minipizza.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Z Snacks">
+    <meta property="og:title" content="Mini Pizzas | Z Snacks">
+    <meta property="og:description" content="Z Snacks mini pizzas in tikka chicken and saucy steak. R40 per 6 pieces. Halaal certified.">
+    <meta property="og:image" content="https://www.zsnacks.co.za/images/minipizza.jpg">
+    <meta property="og:url" content="https://www.zsnacks.co.za/minipizza.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="images/logo-sm.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRS4ESEF5M"></script>
     <script>
@@ -12,55 +23,206 @@
         gtag('js', new Date());
         gtag('config', 'G-DRS4ESEF5M');
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,600..800,0..100,0..1;1,9..144,600..800,0..100,0..1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <a href="index.html"><img src="https://mohamedsuhailkhan.github.io/Zsnacks/images/Logo.png" alt="Z Snacks Logo"></a>
-            </div>
-            <nav>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announce" role="note">
+        <span>Halaal certified by SANHA</span><span class="dot hide-sm" aria-hidden="true">✦</span>
+        <span class="hide-sm">Questions? Call us on </span><a href="tel:+27763454692">076 345 4692</a>
+    </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Z Snacks, home">
+                <img src="images/logo-sm.png" alt="Z Snacks, King of Snacks" width="82" height="52">
+            </a>
+            <nav class="main-nav" id="site-nav" aria-label="Main">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#flavors">Flavors</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#order">How to Order</a></li>
+                    <li><a href="index.html#shops">Where to Buy</a></li>
+                    <li><a href="index.html#halaal">Halaal</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-cta">
+                <button class="cart-btn" type="button" data-open-order aria-label="Open your order"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-label">Your order</span><span class="cart-count" data-cart-count hidden>0</span></button>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+            </div>
         </div>
     </header>
 
-    <main style="margin-top: 120px;">
-        <section id="flavors" class="reveal">
-            <div class="product-detail-header">
-                <a class="back-btn" href="bases.html">&larr; Back Product</a>
-                <a class="back-btn" href="pur.html">Next Product &rarr;</a>
+    <main id="main">
+        <div class="container">
+            <nav class="crumbs" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><span aria-current="page">Mini Pizzas</span></li>
+                </ol>
+            </nav>
+        </div>
+
+        <section class="detail-hero" aria-labelledby="page-title">
+            <div class="container detail-grid">
+                <div class="detail-media reveal">
+                    <img src="images/minipizza.jpg" alt="Mini Pizzas" width="1000" height="750" fetchpriority="high">
+                </div>
+                <div class="detail-copy reveal d1">
+                    <p class="eyebrow">Pizza</p>
+                    <h1 id="page-title">Flavourful Mini Pizzas</h1>
+                    <p class="lead">Crispy mini crusts, generous toppings and a cheesy finish. Perfect for lunchboxes, parties and quick bites.</p>
+                    <div class="detail-meta">
+                        <span class="meta-pill gold"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Halaal certified</span>
+                        <span class="meta-pill">2 flavours</span>
+                    </div>
+                    <div class="detail-price"><div class="price">R40</div><span>per 6 pieces</span></div>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#flavours">Choose your flavour <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                </div>
             </div>
-            
-            <h2 class="section-title">Flavorful Mini Pizzas</h2>
+        </section>
 
-            <img src="images/minipizza.jpg" alt="Mini Pizzas" class="product-detail-image" onerror="this.src='https://via.placeholder.com/600x400.png?text=Mini+Pizzas'">
+        <section class="section tight-top" id="flavours" aria-labelledby="flavours-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Flavours & prices</p>
+                    <h2 id="flavours-title">Choose your flavour</h2>
+                    <p>Tap <strong>Add to order</strong> on anything you like. You can change quantities and send everything in one go from <strong>Your order</strong>.</p>
+                </div>
+                <div class="flavour-grid">
+                    <article class="flavour-card reveal">
+                        <h3>Tikka Chicken</h3>
+                        <p>Succulent chicken marinated in a flavourful tikka spice mix, topped with a cheesy burst and pepper on a crispy mini crust.</p>
+                        <div class="flavour-foot">
+                            <div class="price">R40.00<small>per 6 pieces</small></div>
+                            <button class="btn btn-primary btn-sm add-btn" type="button" data-add data-product="Mini Pizzas" data-flavour="Tikka Chicken" data-price="40.00" data-unit="per 6 pieces" aria-label="Add Mini Pizzas Tikka Chicken to your order"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> <span>Add to order</span></button>
+                        </div>
+                    </article>
+                    <article class="flavour-card reveal">
+                        <h3>Saucy Steak</h3>
+                        <p>Juicy, tender steak chunks bathed in a rich BBQ sauce, layered with melted cheese topped with pepper on a perfectly baked mini base.</p>
+                        <div class="flavour-foot">
+                            <div class="price">R40.00<small>per 6 pieces</small></div>
+                            <button class="btn btn-primary btn-sm add-btn" type="button" data-add data-product="Mini Pizzas" data-flavour="Saucy Steak" data-price="40.00" data-unit="per 6 pieces" aria-label="Add Mini Pizzas Saucy Steak to your order"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> <span>Add to order</span></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-            <div class="flavor-grid">
-                <div class="flavor-card">
-                    <h4>Tikka Chicken</h4>
-                    <p>Succulent chicken marinated in a flavorful tikka spice mix, topped with a cheesy burst and pepper on a crispy mini crust.</p>
-                    <div class="price">R40.00 / 6 pieces</div>
-                </div>
-                <div class="flavor-card">
-                    <h4>Saucy Steak</h4>
-                    <p>Juicy, tender steak chunks bathed in a rich BBQ sauce, layered with melted cheese topped with pepper on a perfectly baked mini base.</p>
-                    <div class="price">R40.00 / 6 pieces</div>
-                </div>
+        <section class="container" aria-label="More products">
+            <div class="pager">
+                <a class="prev" href="bases.html"><img src="images/products/pizzabases.jpg" alt="" width="72" height="72" loading="lazy"><div><small>Previous product</small><strong>Pizza Bases</strong></div></a>
+                <a class="next" href="pur.html"><img src="images/Pur2.jpg" alt="" width="72" height="72" loading="lazy"><div><small>Next product</small><strong>Homemade Pur</strong></div></a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <h3 style="margin-bottom: 1rem; font-family: 'Permanent Marker', cursive; font-size: 2rem;">Z Snacks</h3>
-        <p>&copy; 2025 Z Snacks. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo-sm.png" alt="Z Snacks, King of Snacks" width="101" height="64" loading="lazy">
+                    <p>Premium, mouth-watering snacks crafted with care. Halaal certified and loved across Durban.</p>
+                </div>
+                <div>
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="samoosas.html">Samoosas</a></li>
+                        <li><a href="springroll.html">Spring Rolls</a></li>
+                        <li><a href="pies.html">Little Pies</a></li>
+                        <li><a href="minisub.html">Mini Subs</a></li>
+                        <li><a href="savorybun.html">Savoury Buns</a></li>
+                        <li><a href="bases.html">Pizza Bases</a></li>
+                        <li><a href="minipizza.html">Mini Pizzas</a></li>
+                        <li><a href="pur.html">Homemade Pur</a></li>
+                        <li><a href="wheel.html">Chocolate Cluster Wheels</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html#order">How to Order</a></li>
+                        <li><a href="index.html#shops">Where to Buy</a></li>
+                        <li><a href="index.html#halaal">Halaal Certification</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get in touch</h4>
+                    <ul>
+                        <li><a href="https://wa.me/27763454692?text=Hi%20Z%20Snacks!" target="_blank" rel="noopener noreferrer">WhatsApp us</a></li>
+                        <li><a href="tel:+27763454692">076 345 4692</a></li>
+                        <li><a href="mailto:Sallim7866@gmail.com">Sallim7866@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> SAK Confectioners (Pty) Ltd t/a Z Snacks. All rights reserved.</span>
+                <span>The King of Snacks 👑</span>
+            </div>
+        </div>
     </footer>
+
+    <div class="fab-stack">
+        <button id="myBtn" type="button" title="Back to top" aria-label="Back to top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg></button>
+        <a class="fab-wa" href="https://wa.me/27763454692?text=Hi%20Z%20Snacks!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.012 2C6.486 2 2 6.486 2 12.012c0 1.904.536 3.682 1.473 5.19L2.091 21.909l4.872-1.334A9.96 9.96 0 0 0 12.012 21.95c5.526 0 10.012-4.486 10.012-10.012S17.538 1.926 12.012 1.926V2Zm0 17.98a8.2 8.2 0 0 1-4.444-1.315l-.308-.185-2.939.802.811-2.857-.2-.321a8.2 8.2 0 0 1-1.453-4.346c0-4.728 3.843-8.571 8.571-8.571s8.571 3.843 8.571 8.571-3.862 8.571-8.609 8.571v.651Zm4.718-4.632c-.259-.13-1.525-.757-1.765-.84-.24-.083-.414-.12-.59.138-.176.258-.691.868-.848 1.052-.157.185-.313.203-.572.074-.259-.129-1.096-.397-2.08-1.27-.777-.687-1.299-1.542-1.455-1.8-.157-.258-.017-.397.113-.526.111-.119.249-.294.379-.442.129-.148.174-.259.259-.443.085-.184.04-.35-.024-.479-.065-.129-.581-1.402-.793-1.918-.211-.497-.422-.426-.577-.439h-.498c-.176 0-.461.065-.7.323-.24.258-.933.904-.933 2.214s.961 2.563 1.1 2.747c.139.184 1.846 2.867 4.5 3.928.628.251 1.126.403 1.524.519.646.203 1.229.175 1.717.106.547-.078 1.692-.695 1.931-1.378.24-.683.24-1.274.166-1.4-.074-.139-.249-.213-.508-.342l-.347.19Z"/></svg><span>Order on WhatsApp</span></a>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+        <span id="toast-text"></span>
+        <button type="button" data-open-order>View order</button>
+    </div>
+
+    <!-- Order drawer: basket + checkout. Orders are emailed via Web3Forms (see script.js). -->
+    <dialog class="order-drawer" id="order-drawer" aria-labelledby="drawer-title">
+        <div class="drawer-inner">
+            <header class="drawer-head">
+                <h2 id="drawer-title">Your order</h2>
+                <button class="drawer-close" type="button" data-close-order aria-label="Close your order"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+            </header>
+
+            <div class="drawer-body" id="drawer-body">
+                <div class="drawer-empty" id="drawer-empty">
+                    <div class="empty-ico" aria-hidden="true">🥟</div>
+                    <h3>Your order is empty</h3>
+                    <p>Browse the menu and tap <strong>Add to order</strong> on the flavours you like.</p>
+                    <a class="btn btn-primary" href="index.html#menu" data-close-order>Browse the menu</a>
+                </div>
+
+                <form class="order-form" id="order-form" novalidate hidden>
+                    <ul class="order-items" id="order-items"></ul>
+                    <div class="order-total"><span>Estimated total</span><strong id="order-total">R0.00</strong></div>
+                    <p class="order-note">We confirm availability and the final total when we reply.</p>
+
+                    <h3 class="form-title">Your details</h3>
+                    <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+                    <div class="field-row">
+                        <div class="field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+                        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+                    </div>
+                    <div class="field"><label for="f-notes">Notes <span>(optional)</span></label><textarea id="f-notes" name="notes" rows="3" placeholder="Preferred date, delivery or collection, anything we should know"></textarea></div>
+                    <input type="text" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+                    <p class="form-error" id="form-error" role="alert" hidden></p>
+                    <button class="btn btn-primary btn-block" type="submit" id="order-submit">Send my order <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                    <button class="clear-link" type="button" id="order-clear">Clear order</button>
+                </form>
+
+                <div class="drawer-success" id="drawer-success" hidden>
+                    <div class="empty-ico" aria-hidden="true">🎉</div>
+                    <h3>Thank you, order received!</h3>
+                    <p>We have your order and will contact you shortly to confirm. A reply will come from us by email or phone.</p>
+                    <button class="btn btn-primary" type="button" data-close-order>Back to the menu</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
